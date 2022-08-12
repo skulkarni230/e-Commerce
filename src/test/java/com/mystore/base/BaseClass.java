@@ -61,13 +61,14 @@ public class BaseClass {
         if(browserName.contains("chrome"))
         {
            // System.out.println(prop.getProperty("chromepath"));
-            //System.setProperty("webdriver.chrome.driver",prop.getProperty("chromepath"));
 
+            System.setProperty("webdriver.chrome.driver",prop.getProperty("chromepath"));
             WebDriverManager.chromedriver().setup();
             driver.set(new ChromeDriver());//for cross browser testing
             //driver = new ChromeDriver();//for regular run
         }
         else if (browserName.contains("firefox")){
+            System.setProperty("webdriver.chrome.driver",prop.getProperty("firefoxpath"));
             WebDriverManager.firefoxdriver().setup();
             driver.set(new FirefoxDriver());//for cross browser testing
             //driver = new FirefoxDriver();//for regular run
