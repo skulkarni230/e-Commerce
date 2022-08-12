@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.mystore.utils.Reporting"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Selenium Setup/UPC2.0/My_Store/src/test/java/com/mystore/testcases">
+    <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.mystore.testcases.TC_08_e2e"/>
+        <!--
+        <class name="com.mystore.testcases.TC_02_LoginPage"/>
+        <class name="com.mystore.testcases.TC_04_AccountCreationPage"/>
+        <class name="com.mystore.testcases.TC_05_SearchResultPage"/>
+        <class name="com.mystore.testcases.TC_06_AddToCartPage"/>
+        <class name="com.mystore.testcases.TC_07_OrderPage"/>
+        <class name="com.mystore.testcases.TC_08_e2e"/>
+         -->
+
+    </classes>
+    </test>
+</suite>
