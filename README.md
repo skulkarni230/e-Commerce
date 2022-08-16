@@ -25,3 +25,4 @@ B. Features
 
 C. Pre-Requisite
 1. User should have maven installed in machine for execution
+2. User should have jdk8 installed in system.
